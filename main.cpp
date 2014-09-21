@@ -95,6 +95,7 @@ int main ()
     ng1->aristas.push_back(new AristaGrafo(5,ng2));
     ng1->aristas.push_back(new AristaGrafo(3,ng3));
     ng2->aristas.push_back(new AristaGrafo(2,ng4));
+    ng2->aristas.push_back(new AristaGrafo(1,ng3));
     ng4->aristas.push_back(new AristaGrafo(6,ng5));
 
     return 1;
