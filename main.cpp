@@ -68,17 +68,17 @@ int main ()
     NodoTrinario *nt8 = new NodoTrinario(8);
     NodoTrinario *nt9 = new NodoTrinario(9);
 
-    nt1->hijo_der = nt2;
-    nt1->hijo_izq = nt3;
-    nt1->hijo_medio = nt4;
+    nt1->hijo_izq = nt2;
+    nt1->hijo_medio = nt3;
+    nt1->hijo_der = nt4;
 
-    nt2->hijo_der = nt5;
-    nt2->hijo_medio = nt6;
+    nt2->hijo_medio = nt5;
+    nt2->hijo_der = nt6;
 
     nt4->hijo_izq = nt7;
 
-    nt7->hijo_medio = nt8;
-    nt7->hijo_izq = nt9;
+    nt7->hijo_izq = nt8;
+    nt7->hijo_medio = nt9;
 
 
 //////////////////////////////////////
@@ -94,8 +94,8 @@ int main ()
 
     ng1->aristas.push_back(new AristaGrafo(5,ng2));
     ng1->aristas.push_back(new AristaGrafo(3,ng3));
-    ng2->aristas.push_back(new AristaGrafo(2,ng4));
     ng2->aristas.push_back(new AristaGrafo(1,ng3));
+    ng2->aristas.push_back(new AristaGrafo(2,ng4));
     ng4->aristas.push_back(new AristaGrafo(6,ng5));
 
     return 1;
