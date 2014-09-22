@@ -52,6 +52,31 @@ public:
     }
 };
 
+//////////////////////////////////////
+//////////////EJERCICIOS//////////////
+//////////////////////////////////////
+
+//Imprime todos los numeros de un arbol trinario dada su raiz
+//5pts
+void imprimir(NodoTrinario* raiz)
+{
+    return;
+}
+
+//Devuelve el numero mayor de un arbol trinario dada su raiz
+//5pts
+int getMayor(NodoTrinario* raiz)
+{
+    return -1;
+}
+
+//Devuelve true si puedo llegar desde el nodo inicio hasta el nodo destino dada una distancia maxima del recorrido
+//5pts
+bool puedoLLegar(NodoGrafo* inicio, NodoGrafo* destino, int distancia_max)
+{
+    return false;
+}
+
 int main ()
 {
 //////////////////////////////////////
@@ -97,6 +122,30 @@ int main ()
     ng2->aristas.push_back(new AristaGrafo(1,ng3));
     ng2->aristas.push_back(new AristaGrafo(2,ng4));
     ng4->aristas.push_back(new AristaGrafo(6,ng5));
+
+//////////////////////////////////////
+//////////////EJERCICIOS//////////////
+//////////////////////////////////////
+
+    cout<<"Ejercicio1"<<endl;
+
+    imprimir(nt1);
+
+    cout<<"Ejercicio2"<<endl;
+
+    cout<<getMayor(nt1)<<"\tSe espera: 9"<<endl;
+
+    cout<<getMayor(nt2)<<"\tSe espera: 6"<<endl;
+
+    cout<<getMayor(nt5)<<"\tSe espera: 5"<<endl;
+
+    cout<<"Ejercicio3"<<endl;
+
+    cout<<puedoLLegar(ng1,ng2,5)<<"\tSe espera: 1"<<endl;
+    cout<<puedoLLegar(ng1,ng2,4)<<"\tSe espera: 0"<<endl;
+    cout<<puedoLLegar(ng4,ng3,10000)<<"\tSe espera: 0"<<endl;
+    cout<<puedoLLegar(ng1,ng5,12)<<"\tSe espera: 0"<<endl;
+    cout<<puedoLLegar(ng1,ng5,13)<<"\tSe espera: 1"<<endl;
 
     return 1;
 }
